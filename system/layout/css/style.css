@@ -1,0 +1,613 @@
+/*
+	Unauthorized people are not allowed to access this page.
+	All copy rights are reserved for rwad360 est.  for the year 2017.
+*/
+
+/*start general styling*/
+
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+html, body, h1, h2, h3, ul, li, a, p, 
+article, aside, footer, header, main, nav, section {
+  margin: 0;
+}
+
+
+
+/*starts difining font*/
+
+@font-face { 
+	font-family: Droid Arabic Kufi;
+	src: url(../fonts/DroidKufi-Regular.woff);
+}
+
+@font-face {
+	font-family: Droid Arabic Kufi;
+	src: url(../fonts/DroidKufi-Bold.woff);
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Reem Kufi', sans-serif;
+}
+
+*{
+	font-family: Droid Arabic Kufi;
+	box-sizing: border-box;
+}
+
+/*End difining font*/
+
+body{
+	width:100%;
+	background-color: #fff;
+}
+
+
+/*--------------- Start ---------------*/
+/*---------- main page style ----------*/
+
+/*  leading style for the first page */
+body .main-index {
+	width: 50%;
+	background-color: #fff;
+}
+
+/*----------------End--=-------------*/
+/*----------main page style----------*/
+
+main {
+  text-align: justify;
+}
+
+.empty_col-120 {			/* to add 120 px empty blue spaces in the page */
+	background: url(../images/backgrounds/IMG_010.jpg) no-repeat center top;
+	background-size: cover;
+	height: 120px;
+	background-color: #3575D3;
+	border-top: 5px solid #282b77;
+	border-bottom: 5px solid #282b77;
+}
+
+.empty_col-100 {			/* to add 120 px empty blue spaces in the page */
+	background: url(../images/backgrounds/IMG_016.jpg) center bottom;
+	background-size: cover;
+	height: 100px;
+	background-color: #3575D3;
+	border-top: 5px solid #282b77;
+	border-bottom: 5px solid #282b77;
+}
+
+/*End general styling*/
+
+/*Nav bar starts here*/
+
+.top_nav {
+	border: 1px solid black;
+    margin: 0px;
+}	
+
+.top_nav div div .btn-rwad360 {
+	color: #282b77; 
+	border-top: 6px solid #3575D3;
+}	
+
+.btn-nav {
+	padding-top: 0px; 
+	border-top: 6px solid #a8d03a;
+}
+
+.btn-nav:hover {
+	padding-top: 0px; 
+	border-top: 6px solid #fbcb07;
+}		
+
+.dropdown-menu > li > a {
+	color: #282b77;
+}
+
+.dropdown-menu > li > a:hover {
+	color: #3575D3;
+}
+
+@media screen and (max-width: 768px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none; font-size:75%; padding:5px 8px;}
+	ul.topnav li.left {float: none; font-size:75%; padding:5px 8px;}
+}
+
+/*nav bar ends here*/
+
+/* start scroll up */
+
+#scroll-top {
+	width: 50px;
+	height: 50px;
+	padding-top: 6px;
+	color: #282b77;
+	background-color: #fff;
+	text-align: center;
+	position: fixed;
+	right:15px;
+	bottom:10px;
+	z-index:9999;
+	border-top: 8px solid #282b77;
+	border-bottom: 8px solid #282b77;
+	border-radius: 0px; 
+	display: none;
+	cursor: pointer;
+	line-height: 2px;
+}
+
+#scroll-top i {
+	margin: 1px;
+	padding-top: 3px;
+	line-height: 0px;
+}
+
+#scroll-top:hover {
+	color: #fff;
+	background-color: #282b77;
+	border-top: 8px solid #fff;
+	border-bottom: 8px solid #fff;
+}
+
+#scroll-top i:hover {
+	
+}
+
+/* End scroll up */
+
+/* Carousel base class */
+
+.carousel {
+	width: 100%;
+	height: 420px;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+	width: 100%;
+	height: 420px;
+	background-color: #777;
+}
+
+.carousel .item0 {
+	background: url(../images/backgrounds/advisory.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+.carousel .item1 {
+	background: url(../images/backgrounds/web-design1.png) no-repeat center top;
+	background-size: cover;
+}
+
+.carousel .item2 {
+	background: url(../images/backgrounds/web-design2.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+.carousel .item3 {
+	background: url(../images/backgrounds/IMG_009.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+.carousel .item4 {
+	background: url(../images/backgrounds/IMG_005.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+.first_page_carousel {
+	
+}
+
+.first_page_carousel .carousel-caption {
+	background: rgba(192, 192, 192, 0.5);
+	margin-bottom: 70px;
+}
+
+.first_page_carousel .carousel-caption h2 {
+	margin: 10px;
+	font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 0px;
+    color: #fff;
+	text-shadow: 3px 2px 1px #333;
+}
+
+.first_page_carousel .carousel-caption h3 {
+	margin: 10px;
+	margin-bottom: -15px;
+	font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #fff;
+	text-shadow: 2px 2px 1px #666;
+}
+
+.first_page_carousel .carousel-caption h5 {
+	margin: 10px;
+	font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #fff;
+	text-shadow: 1px 2px 1px #333;
+}
+
+/* Starts shortcuts scrolls*/
+
+.shortcuts {
+	width: 100%;
+	background: url("../images/backgrounds/IMG_004.png") no-repeat top right;
+	padding: 30px 0px;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+.shortcuts p {
+	margin: 10px 0px;
+}
+
+.shortcuts .shorcuts_area{
+	padding: 15px 0px;
+}
+
+.shortcuts .shorcuts_area .shortcuts_btn a{
+	color: #fff;
+	text-decoration:none;
+}
+
+/* End shortcuts scrolls*/
+
+/* start our_services*/
+
+.our_services {
+	background: #eaeaea;
+	padding: 20px 0px 0px 0px;
+	color: #336e7b;
+}
+
+.our_services .selling{
+	margin: 10px 0px;
+	overflow: hidden;
+}
+
+.our_services .selling h2{
+	padding: 10px 0px;
+}
+
+.our_services .selling h5{
+	padding: 10px;
+	color: #333;
+}
+
+.our_services .selling div i, .our_services .selling div h3{
+	margin: 20px 0px;
+	color: #fff;
+	text-shadow: 2px 3px 1px #999;
+}
+
+.our_services .selling .service_hosting{
+	margin: 5px 0px;
+	margin-bottom: 20px;
+	padding:15px;
+	background: rgb(51, 110, 123);
+}
+
+.our_services .selling .service_webs{
+	margin: 5px 0px;
+	padding:15px;
+	background: rgb(37, 116, 169);
+}
+
+.our_services .selling .service_apps{
+	margin: 5px 0px;
+	padding:15px;
+	background: rgb(65, 131, 215);
+}
+
+.our_services .selling .service_content{
+	margin: 10px 0px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #444;
+	border-radius: 10px;
+	color: #333;
+}
+
+.our_services .after_selling {
+	background: #fff;
+}
+
+.our_services .after_selling h2{
+	background: url(../images/backgrounds/IMG_012.PNG) no-repeat center;
+	background-size: 370px 70px;
+	padding-top: 30px;
+	padding-bottom: 35px;
+	color: #fff;
+}
+
+.our_services .after_selling .service{
+	height: 222px;
+	background: rgba(52, 152, 290, 0.5);
+	margin:20px 0px 40px 0px;
+	padding: 10px 0px;
+	color: blue;
+	border: 1px solid rgb(41, 128, 185);
+	border-radius: 19px;
+	box-shadow: 5px 5px 4px gray;
+}
+
+.our_services .after_selling .service img{
+	
+}
+
+.our_services .after_selling .service i{
+	padding: 10px 10px;
+	color: #32a1ce;
+	border: 3px solid #3f5270;
+	border-radius: 50%;
+	text-shadow:2px 2px 2px gray;
+}
+
+.our_services .after_selling .service p{
+	padding: 10px 0px;
+	margin: 6px 4px;
+	color: #2f4f4f;
+}
+
+/* End our_services*/
+
+/*starts first_page_designLevels*/
+
+.first_page_designLevels{
+	width: 100%;
+}
+
+.first_page_designLevels .designLevels{
+	margin: 20px 0px;
+	padding: 10px;
+	border-radius: 25px;
+	border: 15px solid #282b77;
+	box-shadow: 7px 7px 5px #555;
+}
+
+.first_page_designLevels .designLevels .designLevels_topic{
+	background: url(../images/backgrounds/IMG_012.PNG) no-repeat center top;
+	background-size: 300px 70px;
+	margin: 5px 0px;
+	padding: 15px 5px;
+	color: #fff;
+	text-shadow: 2px 2px 2px #555;
+}
+
+.first_page_designLevels .designLevels .designlvl {
+	text-align:justify;
+}
+
+.first_page_designLevels .designLevels .designlvl h4 {
+	color: darkslateblue;
+	margin-top: 4px;
+}
+
+.first_page_designLevels .designLevels .designlvl i{
+	color: cadetblue;
+
+}
+
+.first_page_designLevels .designLevels .designlvl p{
+	color: #708090;
+	padding: 5px 0px 15px 0px;
+}
+
+.first_page_designLevels .note_card{
+	margin: 30px 0px auto;
+	background: rgba(51, 122, 250, 0.30) url(../images/backgrounds/IMG_019.jpg) no-repeat right top;
+	line-height:3px;
+	text-align:justify;
+}
+
+.first_page_designLevels .note_card h3{
+	padding: 8px;
+	margin-bottom: 0px;
+	color: #fff;
+}
+
+.first_page_designLevels .note_card div{
+	width: 100%;
+	height: 100%;
+	padding: 0px 10px 10px 10px;
+	border-top: 3px solid #282b77;
+	border-right: 3px solid #282b77;
+	border-left: 3px solid #282b77;
+	border-bottom: 3px solid #282b77;
+}
+
+.first_page_designLevels .note_card div h4{
+	padding-top: 0px;
+	color: #007799;
+}
+
+.first_page_designLevels .note_card div h5 strong{
+	padding-top: 5px;
+	color: #3979cc;
+}
+
+.first_page_designLevels .note_card div h5{
+	padding-top: 5px;
+	color: #3575D3;
+	line-height: 1.23;
+}
+
+/* End first_page_designLevels*/
+
+/*starts our-products*/
+
+.our-products {
+	width: 100%;
+	padding: 30px 0px;
+}
+
+.our-products div div .col-sm-4 {
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+.our-products div div .col-xs-6 {
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+.our-products .product{
+	background: #f5f5dc;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	padding: 10px 5px;
+	color: #333;
+	text-align: justify;
+	border-right: 2px solid #8a6d3b;
+}
+
+/* End our-products*/
+
+/*starts sales*/
+
+.sales{
+	margin:30px 0px;
+}
+
+/*end sales*/
+
+/*starts latest_projects*/
+
+.our-work {
+	margin-top:35px;
+	padding: 30px 0px;
+	background: rgb(40, 40, 40) url(../images/backgrounds/our-product-bar.jpg) no-repeat right top;
+	color: #fff;
+}
+
+.our-work h2{
+	font-weight: normal;
+	margin-bottom: 20px
+}
+.our-work h2 ~ p{
+	line-height: 2px;
+	margin: 10px 0px 40px;
+}
+
+.our-work .item-box {
+	padding: 20px 0px;
+	overflow:hidden;
+}
+
+.our-work .item-box .item {
+	width: 100%;
+	float: right;
+	overflow:hidden;
+	position: relative;
+}
+
+.our-work .item-box .item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.our-work .item-box .item a{
+	margin: 10px 0px;
+	background-color: rgba(250, 250, 250, 0.9);
+    border:2px solid rgba(40, 43, 119, 0.9);
+	text-decoration: none;
+	color: rgb(40, 43, 119);
+	text-shadow: 1px 1px 1px #222;
+}
+
+.our-work .item-box .item a:hover{
+	margin: 10px 0px;
+	background-color: rgba(40, 43, 119, 0.9);
+    border:2px solid rgba(250, 250, 250, 0.9);
+	color: #fff;
+	text-shadow: 1px 1px 1px #999;
+}
+
+.our-work .item-box .item button:hover{
+	background-color: rgba(40, 43, 119, 0.6);
+    border:2px solid rgba(250, 250, 250, 1);
+}
+
+.our-work .item-box .item .over {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 50px 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(53, 117, 211, .4);
+	border: 5px solid rgba(40, 43, 119, 0.8);
+	color:#fff;
+	border-radius: 10px;
+	display:none;
+}
+
+.our-work .item-box .item .over h3 {
+	padding: 10px 0px;
+	text-shadow: 2px 2px 1px #222;
+}
+
+.our-work .item-box .item .over h4 {
+	padding: 10px 16%;
+	font-weight: 550;
+	text-shadow: 2px 2px 2px #333;
+	line-height: 1.5;
+}
+
+.our-work .item-box .item:hover .over {
+	display:block;
+}
+/* End latest_projects*/
+
+
+/*starts footer*/
+
+footer {
+    border-top: 8px solid #282b77;
+    font-size: 18px;
+    min-height: 160px;
+    background-color: #3575D3;
+    color: #fff;
+    padding: 15px 25px;
+}
+
+footer .footer-contacts{
+	width: 100%;
+	padding: 10px 0px;
+}
+
+footer .footer-contacts h4{
+	background-color: rgba(175, 175, 175, 0.5);
+	padding: 8px;
+	margin: 0px 0px 10px 0px;
+	border-radius:3px;
+}
+
+footer .footer-contacts .sMedia{
+	background-color: rgba(175, 175, 175, 0.5);
+	height: 62px;
+	padding: 5px;
+	margin: 0px 0px 5px 0px;
+	border-radius:3px;
+}
+
+footer .footer-contacts a{
+	color: #999;
+	text-decoration: none;
+}
+
+
+/*Ends footer*/
